@@ -135,7 +135,7 @@ for brand in brands:
         st.dataframe(top_5_mobiles)
 
         # Bar chart for the top 3 mobiles of the selected brand
-        plt.figure(figsize=(10, 6))
+        plt.figure(figsize=(7, 3))
         sns.barplot(x='Product Name', y='Review', data=top_5_mobiles, palette='viridis')
         plt.xticks(rotation=45, ha='right')
         plt.title(f'Top 5 Mobiles of {brand} Based on Ratings')
