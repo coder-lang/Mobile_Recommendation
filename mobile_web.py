@@ -1,13 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[ ]:
-
-
-# encoding='ISO-8859-1'
-
-
-# In[15]:
+# In[1]:
 
 
 import warnings
@@ -16,8 +10,7 @@ import warnings
 warnings.filterwarnings("ignore")
 
 
-
-# In[17]:
+# In[3]:
 
 
 import streamlit as st
@@ -25,7 +18,6 @@ import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 st.set_option('deprecation.showPyplotGlobalUse', False)
-
 # Load the data
 data = pd.read_csv('Mobile_data_Flipkart.csv', encoding='ISO-8859-1')  # Replace with the actual file path
 
@@ -87,6 +79,11 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
+
+# Google Search Console verification meta tag
+google_verification_code = "google03aebfc10113a5f3.html"  # Replace with your actual verification code
+google_verification_meta_tag = f'<meta name="google-site-verification" content="{google_verification_code}" />'
+st.markdown(google_verification_meta_tag, unsafe_allow_html=True)
 
 # Title of the Streamlit web app
 st.title('Mobile Product Information')
