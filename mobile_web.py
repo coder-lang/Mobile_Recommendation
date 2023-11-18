@@ -69,7 +69,6 @@ st.markdown(
 google_verification_meta_tag = '<meta name="google-site-verification" content="LK3AHXVkH7ZU3_N9IvU8mpqWZbNnKr3C9PS2htg2bJA" />'
 
 # Include the meta tag in the HTML head section
-st.head()
 st.markdown(google_verification_meta_tag, unsafe_allow_html=True)
 
 # Title of the Streamlit web app
