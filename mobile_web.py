@@ -1,24 +1,7 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[1]:
-
-
-import warnings
-
-# Ignore warnings
-warnings.filterwarnings("ignore")
-
-
-# In[4]:
-
-
 import streamlit as st
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
-
-st.set_option('deprecation.showPyplotGlobalUse', False)
 
 # Load the data
 data = pd.read_csv('Mobile_data_Flipkart.csv', encoding='ISO-8859-1')  # Replace with the actual file path
@@ -84,10 +67,12 @@ st.markdown(
 
 # Google Search Console verification meta tag
 google_verification_meta_tag = '<meta name="google-site-verification" content="LK3AHXVkH7ZU3_N9IvU8mpqWZbNnKr3C9PS2htg2bJA" />'
-st.markdown(google_verification_meta_tag, unsafe_allow_html=True)
 
 # Title of the Streamlit web app
-st.title('Mobile Product Information')
+st.title('Top Mobiles To Buy')
+
+# Include the meta tag in the HTML head section
+st.markdown(google_verification_meta_tag, unsafe_allow_html=True)
 
 # Unique brands in the dataset
 brands = data['Brand'].unique()
@@ -142,10 +127,3 @@ for brand in brands:
 
         # Display the plot
         st.pyplot()
-
-
-# In[ ]:
-
-
-
-
