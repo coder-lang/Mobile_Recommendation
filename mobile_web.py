@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
-
+st.set_option('deprecation.showPyplotGlobalUse', False)
 # Load the data
 data = pd.read_csv('Mobile_data_Flipkart.csv', encoding='ISO-8859-1')  # Replace with the actual file path
 
