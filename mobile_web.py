@@ -26,7 +26,7 @@ data = pd.read_csv('Mobile_data_Flipkart.csv', encoding='ISO-8859-1')  # Replace
 # Set the theme and style
 sns.set_theme(style="whitegrid")
 st.set_page_config(
-    page_title="Mobile Product Information",
+    page_title="Top Mobiles To Buy",
     page_icon="📱",
     layout="wide"
 )
