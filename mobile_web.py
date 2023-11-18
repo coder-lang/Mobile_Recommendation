@@ -83,7 +83,7 @@ st.markdown(
 )
 
 # Google Search Console verification meta tag
-google_verification_meta_tag = '<meta name="google-site-verification" content="LK3AHXVkH7ZU3_N9IvU8mpqWZbNnKr3C9PS2htg2bJA" />'
+google_verification_meta_tag = '<meta name="google-site-verification" content="tFPHCwZBidGmcUotr7nirzZL4TZwASezYLY_uTl2Dng" />'
 st.markdown(google_verification_meta_tag, unsafe_allow_html=True)
 
 # Title of the Streamlit web app
